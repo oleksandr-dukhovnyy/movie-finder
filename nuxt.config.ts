@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   app: {
-    baseURL: '/movie-finder/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/movie-finder/' : '',
   },
   devtools: { enabled: false },
   css: ['vue3-carousel/dist/carousel.css'],
