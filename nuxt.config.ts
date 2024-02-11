@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/movie-finder/',
+  },
   devtools: { enabled: false },
   css: ['vue3-carousel/dist/carousel.css'],
   modules: [
