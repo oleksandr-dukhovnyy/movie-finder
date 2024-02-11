@@ -1,0 +1,26 @@
+$list: (
+  sm: 639px,
+  md: 767px,
+  lg: 1023px,
+  xl: 1279px,
+  2xl: 1535px,
+);
+
+@mixin media-down($name) {
+  @include _media-down($name, $list) {
+    @content;
+  }
+}
+
+@mixin media-up($name) {
+  @include _media-up($name, $list) {
+    @content;
+  }
+}
+
+@mixin max-lines($lines: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,27 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env.*
+!.env.example
+
+# Do not do this in real applications! Adding .env is done to simplify viewing the project.
+# Moreover, there are no secret data in the .env file at the moment.
+# .env
