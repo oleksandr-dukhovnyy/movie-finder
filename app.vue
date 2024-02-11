@@ -9,6 +9,11 @@
     <div class="main__content flex flex-col items-center">
       <TheTitle />
       <NuxtPage />
+
+      <div
+        class="lg:hidden"
+        style="height: 100px"
+      ></div>
     </div>
   </main>
 </template>

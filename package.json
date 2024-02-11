@@ -11,7 +11,7 @@
     "postinstall": "npm run nuxt-prepare",
     "nuxt-prepare": "nuxt prepare",
     "postnuxt-prepare": "husky install",
-    "lint": "npx eslint ./**/* --fix",
+    "lint": "npx eslint ./**/*.vue ./**/*.ts --fix",
     "format": "prettier --write --ignore-unknown",
     "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },

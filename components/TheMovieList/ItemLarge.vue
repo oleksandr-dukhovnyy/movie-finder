@@ -37,7 +37,7 @@
             v-if="'Director' in movie"
             class="card__director"
           >
-            <span class="lg:hidden">{{ `${movie.Year} ,` }}</span>
+            <span class="lg:hidden">{{ `${movie.Year},` }}</span>
             {{ movie.Director }}
           </p>
           <p class="card__year hidden lg:block">
@@ -71,11 +71,18 @@
 
     &__title {
       font-size: 40px;
+      line-height: 1.3;
 
       @include max-lines(7);
 
       @include media-down(lg) {
         @include max-lines(3);
+
+        font-size: 36px;
+      }
+
+      @include media-down(md) {
+        font-size: 20px;
       }
     }
 
@@ -116,6 +123,10 @@
 
       @include media-down(lg) {
         font-size: 18px;
+      }
+
+      @include media-down(md) {
+        font-size: 16px;
       }
     }
 
