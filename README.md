@@ -1,5 +1,7 @@
 # MovieFinder
 
+### [Live](https://oleksandr-dukhovnyy.github.io/movie-finder/)
+
 ---
 
 ## Nuxt 3 Minimal Starter
